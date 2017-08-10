@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme"
+    tools:context="com.example.dell.spectrum.TapbarFragments.HomeFragment">
+   <!-- Image Slider widget-->
+    <include
+        layout="@layout/activity_toolbarloginmodule" />
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp" />
+   <!-- <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:background="#1AAFBA"
+        android:layout_height="120dp">
+
+    </RelativeLayout>-->
+    <include
+
+        layout="@layout/activity_mainhomepage"/>
+</RelativeLayout>

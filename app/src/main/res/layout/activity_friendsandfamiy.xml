@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/activity_toolbaroperation" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Name"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <com.example.dell.spectrum.FONTS.EditTextFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#D9DADC"
+                    android:hint="@string/dad"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Relationship"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#d9dadc"
+                    android:layout_gravity="center"
+                    android:textAlignment="center" />
+
+
+                <!--<com.example.dell.spectrum.FONTS.EditTextFontStyle-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="55dp"-->
+                <!--android:id="@+id/editrelation"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:background="#D9DADC"-->
+                <!--android:hint="Enter Relationship Name"-->
+                <!--android:textAlignment="center"-->
+                <!--android:maxLength="15"-->
+                <!--android:singleLine="true" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Enter the account number"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <com.example.dell.spectrum.FONTS.EditTextFontStyle
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#D9DADC"
+                    android:hint="E-mail/ phone number"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.dell.spectrum.FONTS.ButtonFontStyle
+        android:id="@+id/btn_add"
+        android:layout_width="290dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ic_signinbutton"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+</LinearLayout>

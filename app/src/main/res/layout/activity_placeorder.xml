@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_toolbarloginmodule" />
+
+
+    <RelativeLayout
+        android:id="@+id/processthree"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rlone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <View
+
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_stepper_connector" />
+
+
+            <TextView
+                android:id="@+id/steptwo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+            <View
+
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_stepper_connector" />
+
+            <TextView
+                android:id="@+id/stepthree"
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:alpha=".87"
+                android:text="Shopping Cart"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/titletwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:alpha=".87"
+                android:text="Payment shipping"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/titlethree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:alpha=".87"
+                android:text="Place order"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/orderid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/processthree"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff">
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#fefefe"
+            android:gravity="center"
+            android:text="Thank for your shopping the order No is:12345"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@id/orderid"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#f3f3f3">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:id="@+id/textview_one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Payment Options"
+                android:textSize="18sp" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Credit card"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl1"
+            android:background="#57000000" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:text="Status"
+                android:textSize="18sp" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Order is processing"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl2"
+            android:background="#57000000" />
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Order items"
+                android:textSize="18sp" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl3"
+            android:background="#57000000" />
+
+        <RelativeLayout
+            android:id="@+id/rl4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:id="@+id/recipent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Reciepient"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl4"
+            android:background="#57000000" />
+
+        <RelativeLayout
+            android:id="@+id/rl5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Shipping Address"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl5"
+            android:background="#57000000" />
+
+        <RelativeLayout
+            android:id="@+id/rl6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/rl5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total Amount"
+                android:textSize="18sp" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="NT$499"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rl6"
+            android:background="#57000000" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

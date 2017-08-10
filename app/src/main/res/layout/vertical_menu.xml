@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="113dp"
+    android:layout_height="80dp"
+    card_view:cardElevation="0dp"
+    card_view:cardBackgroundColor="#fafafa"
+    card_view:cardCornerRadius="4dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="#fafafa"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageview"/>
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="11dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:id="@+id/txtview"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

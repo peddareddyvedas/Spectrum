@@ -1,0 +1,291 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    style="@style/AppTabLayout"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.spectrum.TapbarFragments.SetupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include layout="@layout/activity_toolbaroperation" />
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="130dp"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:id="@+id/main">-->
+    <!--<ImageView-->
+    <!--android:layout_width="120dp"-->
+    <!--android:layout_height="130dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:background="@drawable/ic_acccountmain"/>-->
+    <!--&lt;!&ndash;<Button-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:gravity="center"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:background="@drawable/ic_rightarrow"-->
+    <!--android:layout_centerHorizontal="true" />&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="315dp"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:layout_below="@+id/main">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_account" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/UserProfile"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_rightarrow"
+                android:gravity="center_horizontal" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_device"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_pregnancytest" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/mydevice"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_rightarrow"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:id="@+id/rl_spectrom"-->
+        <!--android:layout_height="50dp">-->
+        <!--<ImageView-->
+        <!--android:layout_width="37dp"-->
+        <!--android:layout_height="37dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:background="@drawable/ic_account"/>-->
+        <!--<com.example.dell.spectrum.FONTS.TextViewFontStyle-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:text="@string/Spectrometer"-->
+        <!--/>-->
+        <!--<Button-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:background="@drawable/ic_rightarrow"-->
+        <!--android:layout_centerHorizontal="true" />-->
+        <!--<View-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:background="@drawable/ic_listline_btm"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:layout_alignParentBottom="true"/>-->
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:id="@+id/rl_preference"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_personsettings" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/Preferences"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_rightarrow"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_feedbck"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_feedback" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/Feed"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_rightarrow"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ic_aboutus" />
+
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp"
+                android:text="@string/about"
+                android:textSize="17sp" />
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_rightarrow"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_listline_btm" />
+        </RelativeLayout>
+    </LinearLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>

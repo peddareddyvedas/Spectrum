@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLightGray">#727272</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#2196f3</color>78b0dd
+    <color name="colorBluelight">#78b0dd</color>
+    <color name="colorGray">#606366</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorthickyellow">#ffbf00</color>
+    <color name="colorred">#FF0000</color>
+    <color name="colorsufron">#fe4d09</color>
+
+
+
+
+
+
+    <color name="material_stepper_active_text">#57000000</color>
+
+    <!-- inactive step -->
+
+    <color name="material_stepper_inactive_text">#26000000</color>
+    <color name="material_stepper_inactive_circle_text">#ffffff</color>
+
+    <!-- optional step -->
+
+    <color name="material_stepper_optional">#bdbdbd</color>
+    <color name="material_stepper_circle">#bdbdbd</color>
+
+    <color name="material_stepper_connector">#BDBDBD</color>
+</resources>

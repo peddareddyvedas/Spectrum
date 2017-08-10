@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.spectrum">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LOGIN.IndicatorActivity"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LOGIN.LoginpageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LOGIN.ConformForgotPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LOGIN.ForgotpasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".LOGIN.RegisterpageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.AddDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.ConfirmDeviceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TapbarFragments.FragmentMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.AccountSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.FriendsAndFamilyActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.MySpectometerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.CheckForUpdateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.PreferencesActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Settings.PersonalInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.CircularProressActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Graphs.FragmentMainActivityGraph" android:screenOrientation="portrait"/>
+       <activity android:name=".TapbarFragments.TestResultpageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.RelationPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.UrineAnimationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Home.TestAnalizingActivity" android:screenOrientation="portrait"/>
+       <activity android:name=".Settings.ChangepasswordActivity"/>
+        <activity android:name=".TapbarFragments.StoreItemDetailsActivity"/>
+        <activity android:name=".Settings.LanguagesActivity"/>
+        <activity android:name=".TapbarFragments.PlaceOrder"/>
+        <activity android:name=".TapbarFragments.PaymentShipping"/>
+        <activity android:name=".TapbarFragments.ShippingCart"/>
+    </application>
+
+</manifest>

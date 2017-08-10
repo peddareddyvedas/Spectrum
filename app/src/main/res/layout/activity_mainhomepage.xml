@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme"
+    android:layout_marginTop="160dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="400dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/headbar"
+        android:id="@+id/ln1"
+        android:layout_height="25dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_humanhealth"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            />
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Human"
+            android:layout_marginLeft="40dp"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:visibility="gone"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/ic_backbtn"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/ln2"
+        android:layout_below="@+id/ln1"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/horizontal_recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/ln3"
+        android:layout_below="@+id/ln2"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/pets"
+            layout="@layout/health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/ln4"
+        android:layout_below="@+id/ln3"
+
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/water"
+            layout="@layout/water"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/ln5"
+                android:layout_below="@+id/ln4"
+
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/water"
+                    layout="@layout/meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/ln6"
+                android:layout_below="@+id/ln5"
+
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/water"
+                    layout="@layout/vegfruite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/ln7"
+                android:layout_below="@+id/ln6"
+
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/water"
+                    layout="@layout/dairy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/ln8"
+                android:layout_below="@+id/ln7"
+
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/water"
+                    layout="@layout/codiment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:id="@+id/ln9"
+                android:layout_below="@+id/ln8"
+
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/water"
+                    layout="@layout/wine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

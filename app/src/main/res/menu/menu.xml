@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/Qrcode"-->
+        <!--android:icon="@drawable/QRcode"-->
+        <!--android:title="Qrcode"-->
+        <!--myapp:showAsAction="ifRoom"/>-->
+
+    <!--<item android:id="@+id/menu_item_new_quote"-->
+        <!--android:icon="@drawable/addicon"-->
+        <!--android:title="new_quote"-->
+        <!--myapp:showAsAction="ifRoom" />-->
+
+
+</menu>

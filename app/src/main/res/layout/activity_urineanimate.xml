@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/activity_toolbarloginmodule"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/animation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:layout_height="300dp" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="120dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/urinstepone"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"/>
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:text="@string/urinesteptwo"
+            android:layout_alignParentBottom="true"/>
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:textSize="18dp"
+            android:text="Skip"
+            android:textColor="@color/colorBlue"
+            android:id="@+id/skip"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <View
+            android:layout_width="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/skip"
+            android:background="@color/colorBlue"
+            android:layout_height="2dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

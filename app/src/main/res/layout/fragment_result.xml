@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_one"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#f2f2f2">
+
+        <ImageView
+            android:id="@+id/imageone"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_man" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageone"
+            android:text="Kelvin"
+            android:textSize="18sp" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:id="@+id/scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imageone"
+            android:text="2017-07-24 11:21am"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_two"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageButton
+            android:id="@+id/leftimg"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_back" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/theee"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/normalimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="80dp"
+
+            android:background="@drawable/ic_goodmood" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:id="@+id/normaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/normalimage"
+            android:text="Normal"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/abnormalimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_toRightOf="@id/normaltext"
+            android:background="@drawable/ic_angry" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/abnormalimage"
+            android:text="Abnormal"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/result_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_btndown"
+            android:padding="20dp"
+            android:textSize="20dp" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/chattext"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/warning"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2">
+
+        <ListView
+            android:id="@+id/listview_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</LinearLayout>

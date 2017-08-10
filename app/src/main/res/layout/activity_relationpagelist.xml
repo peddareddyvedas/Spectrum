@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.dell.spectrum.TapbarFragments.StoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/activity_toolbarloginmodule"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_marginTop="80dp"
+        android:numColumns="3"
+        android:layout_marginLeft="25dp"
+        android:verticalSpacing="15dp"
+        android:id="@+id/relationlist">
+
+    </GridView>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:text="Store" />-->
+</RelativeLayout>

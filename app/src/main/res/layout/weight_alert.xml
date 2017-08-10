@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorBlue" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBlue"
+        android:layout_below="@+id/rl_header"
+        android:id="@+id/view"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/rl_number_picker">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/weight_pickerone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:np_width="64dp"
+            app:np_height="180dp"
+            android:layout_marginLeft="75dp"
+            app:np_dividerColor="@color/colorBlue"
+            app:np_max="59"
+            app:np_textSize="20dp"
+            app:np_min="0">
+        </com.shawnlin.numberpicker.NumberPicker>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/rl_number_picker"
+        android:id="@+id/rl_number_picker2">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/weight_pickertwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:np_width="64dp"
+            app:np_height="180dp"
+            app:np_dividerColor="@color/colorBlue"
+            app:np_max="59"
+            app:np_textSize="20dp"
+            app:np_min="0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true">
+        </com.shawnlin.numberpicker.NumberPicker>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_number_picker"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.49975"
+                android:gravity="center_horizontal">
+
+                <com.example.dell.spectrum.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/drawable_alertbtn"
+                    android:text="Cancel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.0005"
+                android:background="@color/colorBluelight"
+                android:gravity="center_horizontal">
+
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:id="@+id/textView2"
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:text="Large Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.49975"
+                android:gravity="center_horizontal">
+
+                <com.example.dell.spectrum.FONTS.ButtonFontStyle
+                    android:id="@+id/btn_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/drawable_alertbtn"
+                    android:text="@string/ok"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

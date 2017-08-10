@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_home">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbartab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196f3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="30dp"
+                android:id="@+id/btn_back"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_leftarrow"
+                android:layout_height="30dp" />
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urine Test"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="18dp"
+                android:layout_marginLeft="80dp"
+                android:textColor="#ffffff"/>
+           <!-- <ImageButton
+                android:layout_width="30dp"
+                android:id="@+id/dots"
+                android:background="@drawable/dots"
+                android:layout_marginLeft="300dp"
+                android:layout_height="30dp" />-->
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_below="@+id/toolbartab"
+        android:textAlignment="center"
+        app:tabGravity="fill"
+        app:tabTextColor="#ffffff"
+        android:background="@color/colorBlue"
+        android:textAllCaps="false"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="#274e13"
+        app:tabMode="fixed" />
+    <!--<include-->
+        <!--android:id="@+id/toolbar"-->
+        <!--layout="@layout/toolbar_fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbartab"
+        android:layout_marginTop="22dp">
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

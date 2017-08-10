@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/activity_toolbaroperation"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rl_lang"
+                android:layout_height="50dp">
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="@string/langauge"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center_horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/btn1"
+                    android:background="@drawable/ic_rightarrow"
+                    android:layout_centerHorizontal="true" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ic_listline_btm"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rl_checkupdate"
+                android:layout_height="50dp">
+                <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/checkupdates"
+                    />
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/ic_rightarrow" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/ic_listline_btm"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>-->
+            </LinearLayout>
+</LinearLayout>

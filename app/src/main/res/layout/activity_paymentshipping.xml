@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/activity_toolbarloginmodule" />
+
+
+    <RelativeLayout
+        android:id="@+id/process"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:id="@+id/rlone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <View
+
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_stepper_connector" />
+
+
+            <TextView
+                android:id="@+id/steptwo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+            <View
+
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/material_stepper_connector" />
+
+            <TextView
+                android:id="@+id/stepthree"
+                android:layout_width="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_grayround"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:alpha=".87"
+                android:text="Shopping Cart"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/titletwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:alpha=".87"
+                android:text="Payment shipping"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/titlethree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:alpha=".87"
+                android:text="Place order"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#757575"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_one"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/process">
+
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:id="@+id/paymentoption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Payment Options"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/paymentoption"
+            android:background="#57000000" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/paymentoption">
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <RadioButton
+                    android:id="@+id/radioone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="#03a9f4"
+                    android:text="Convenience Store"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/radioone"
+                    android:background="#57000000" />
+
+                <RadioButton
+                    android:id="@+id/radiotwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioone"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="#03a9f4"
+                    android:text="Credit Card"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/radiotwo"
+                    android:background="#57000000" />
+
+                <RadioButton
+                    android:id="@+id/radiothree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiotwo"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="#03a9f4"
+                    android:text="ATM"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/radiothree"
+                    android:background="#57000000" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativetwo"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_below="@id/relative_one">
+
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:id="@+id/shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Shipping Options"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/shipping"
+            android:background="#57000000" />
+
+
+        <RelativeLayout
+            android:id="@+id/relative_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shipping">
+
+            <RadioGroup
+                android:id="@+id/radiogroup_two"
+                android:layout_width="fill_parent"
+
+                android:layout_height="fill_parent">
+
+
+                <RadioButton
+                    android:id="@+id/radiofour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="#03a9f4"
+                    android:text="7-11"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/radiofour"
+                    android:background="#57000000" />
+
+                <RadioButton
+                    android:id="@+id/radiofive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radiofour"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="#03a9f4"
+                    android:text="Familymart"
+                    android:textColor="#757575"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/radiofive"
+                    android:background="#57000000" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/paymentnext"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativetwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/store_shape"
+        android:text="next"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Spectrum</string>
+    <string name="first">The worlds smallest spectrome</string>
+    <string name="third">Morethan one machine application</string>
+    <string name="second">Laboratory and medical grade</string>
+    <string name="spectrochip">SpectroChip</string>
+    <string name="operationguide">Operation Guide</string>
+    <string name="settingtitle">Personal center</string>
+    <string name="friendstitle">Add Members</string>
+    <string name="myspecctometer">My Spectrometer</string>
+    <string name="qrcode">QRcode Scanner</string>
+    <string name="checkforupdate">Check for update</string>
+    <string name="reminingbattery">Remaining battery</string>
+    <string name="checkupdates">Check for updates</string>
+    <string name="formware">Firmware</string>
+
+    <string name="members">Members</string>
+    <string name="wife">Wife</string>
+    <string name="mydevice">My Device</string>
+    <string name="UserProfile">User Profile</string>
+    <string name="cureentversion">Current version v1.0.0</string>
+    <string name="latestversion">The latest version v1.0.2</string>
+    <string name="preferences">Preferences</string>
+    <string name="lang">Languages</string>
+    <string name="presonalinfo">Personal Information</string>
+    <string name="langauge">Language </string>
+    <string name="coments">Comments</string>
+    <string name="contact">Contact </string>
+    <string name="feedback">Feedback</string>
+    <string name="agreement">User Agreement and Privacy Policy</string>
+    <string name="store">Store</string>
+    <string name="setup">SetUp</string>
+    <string name="urinestrip">Urine Strip</string>
+    <string name="price">Price:NT$499</string>
+    <string name="testitem">Tests item:</string>
+    <string name="testlist">Leukocytes,Nitrite/Urobilinogen,Protine,PH,OccultBlood,Specific Gravity,Ketone,Bilirubin and Glucose</string>
+    <string name="accountstt">Account Settings</string>
+    <string name="friends">Friends And family mana...</string>
+    <string name="Spectrometer">My Spectrometer</string>
+    <string name="Preferences">Preferences</string>
+    <string name="Feed">FeedBack</string>
+    <string name="about">About us</string>
+    <string name="settingmain">My family members</string>
+    <string name="photo">Are you want to change photo</string>
+    <string name="logout">Do you want to sign out</string>
+    <string name="mom">Mom</string>
+    <string name="son">Son</string>
+    <string name="edward">Edward</string>
+    <string name="sophia">Sophia</string>
+    <string name="bella">Bella</string>
+    <string name="james">James</string>
+    <string name="aurora">Aurora</string>
+
+
+
+    <string name="companion">Companion</string>
+    <string name="daughter">Daughter</string>
+    <string name="other">Other Family Members</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="sms_body">Check out, what I have achieved today!</string>
+    <string name="share_satus">Share the status :</string>
+    <string name="chattext">Normal urine with trace amounts of glucose, qualitative test was negetive. Urine positive may be disease.
+Related diseases: diabetes, liver disease, kidney disease, hyperthyroidism or cortisol increased disease, pheochrmocytoma and other endocrine diseases: pregnancy
+</string>
+    <string name="warning">Warning: continuous check results for the positive as soon as possible go to the hospital.</string>
+    <string name="avathar">Avathar</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="accuntno">Account number</string>
+    <string name="changepsw">Change password</string>
+    <string name="gender">Gender</string>
+    <string name="dob">Date of birth</string>
+    <string name="height">Height</string>
+    <string name="weight">Body weight</string>
+
+    <string name="lookingforspectrometer">Looking For Spectrometer, Please Wait...</string>
+    <string name="textconfirmdevice">Confirm the device</string>
+    <string name="btncancel">Cancel</string>
+    <string name="btnconfirm">Confirm</string>
+
+    <string name="confirmpsw">1.Must be different from Old  password.</string>
+    <string name="confirmps">2.Have minimum of 6~16 characters,contain one uppercase and one lowercase.</string>
+    <string name="urinstepone">1.Immerse the strip in uring for 1 to 2"\n""\t"second and lay the strip flat on a clean,"\n""\t"dry, non-absorbent surface.
+    </string>
+    <string name="urinesteptwo">2.Put the strip into the strip holder</string>
+    <string name="settings">Settings</string>
+    <string name="accunt">Account</string>
+    <string name="picture">picture</string>
+    <string name="userprofile">UserProfile</string>
+    <string name="addtocart">Add To Cart</string>
+    <string name="dad">Dad</string>
+
+    <string name="oldpsw">Enter old password</string>
+    <string name="newpsw">Enter new password</string>
+    <string name="repsw">Re-type new password</string>
+
+    <string name="shopone">Urine Strips</string>
+    <string name="shoptwo">Blood Sugar"\n"Test Strips</string>
+    <string name="shopthree">Saliva"\n"Sugar Test Strips</string>
+    <string name="shopfour">Pregnancy"\n"Test Strips</string>
+    <string name="shopfive">"\n"Test Strips</string>
+
+
+</resources>

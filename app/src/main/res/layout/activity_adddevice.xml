@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/activity_toolbarloginmodule"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:id="@+id/image_in_adddevice"
+       android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_adddevice"
+        android:scaleType="fitCenter"
+       android:fitsSystemWindows="true"
+        android:layout_height="150dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:id="@+id/progressbar_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_below="@+id/image_in_adddevice"
+        android:progressDrawable="@drawable/progress_drawable"
+        android:layout_marginTop="90dp"
+        android:secondaryProgress="70"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="7dp" />
+
+    <com.example.dell.spectrum.FONTS.TextViewFontStyle
+        android:layout_width="match_parent"
+        android:id="@+id/looking_for_spectrometer"
+        android:layout_below="@+id/progressbar_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="@string/lookingforspectrometer"
+        android:layout_marginLeft="45dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/activity_toolbarloginmodule" />
+
+    <!--  <Button
+          android:layout_width="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/download"
+          android:text="DownLoad"
+          android:layout_height="wrap_content" />-->
+    <com.example.dell.spectrum.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        android:text="Waiting for 45 seconds for rection to complete"
+        android:textColor="#868d98"
+        android:layout_marginLeft="30dp"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/download"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:layout_width="350dp"
+            android:id="@+id/progressbar"
+            android:layout_marginLeft="100dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:rotation="270"
+            android:progressDrawable="@drawable/circular_progress"
+            android:max="50"
+            android:layout_height="350dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <com.example.dell.spectrum.FONTS.TextViewFontStyle
+            android:layout_width="wrap_content"
+            android:id="@+id/progress_text"
+            android:layout_centerInParent="true"
+            android:textColor="#0098d7"
+            android:layout_marginRight="7dp"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <!--<com.example.dell.spectrum.FONTS.TextViewFontStyle
+        android:layout_width="wrap_content"
+        android:text="jump over"
+        android:textSize="20dp"
+        android:id="@+id/jump"
+        android:textColor="#868d98"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="250dp"
+        android:layout_height="wrap_content" />
+-->
+
+</LinearLayout>
