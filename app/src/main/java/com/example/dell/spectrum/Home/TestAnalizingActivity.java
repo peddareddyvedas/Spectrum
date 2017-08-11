@@ -34,7 +34,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
     int count = 0;
     Toolbar toolbar;
     ImageButton back;
-    public static boolean isFromtest=false;
+    public boolean isFromtest=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -73,7 +73,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
                 public void onClick(View v) {
 
 
-                    isFromtest=true;
+                    isFromtest=false;
                     Log.e("onclick","call"+isFromtest);
                     if(isFromtest){
                         Log.e("ttrue","call");
@@ -84,7 +84,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
 
 
 
-                    dialog.dismiss();
+                   dialog.dismiss();
                 }
             });
             yes.setOnClickListener(new View.OnClickListener() {
@@ -144,7 +144,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
                     currentIndex = 0;
 
                     if(isFromtest==false)
-                   {
+                   {Log.e("next","call");
                          finish();
                        FragmentMainActivity.isFromHOme=false;
                        Intent intent = new Intent(getApplicationContext(), FragmentMainActivity.class);
@@ -163,6 +163,9 @@ public class TestAnalizingActivity extends AppCompatActivity {
                 else{
                     nextImage();
 
+//                    finish();
+//                    FragmentMainActivity.isFromHOme=false;
+//                    startActivity(new Intent(getApplicationContext(),FragmentMainActivity.class));
 
                 }
 

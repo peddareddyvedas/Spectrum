@@ -30,7 +30,7 @@ public class UrineAnimationActivity extends AppCompatActivity {
     Toolbar toolbar;
     ImageButton back;
     TextView skip;
-    public static boolean isFromcir=false;
+    public  boolean isFromcir=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -100,7 +100,7 @@ public class UrineAnimationActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(currentIndex > endIndex)
-                {
+                { Log.e("bool","call"+isFromcir);
                     currentIndex = 0;
                     if(isFromcir==false){
                         startActivity(new Intent(getApplicationContext(),CircularProressActivity.class));
@@ -108,6 +108,7 @@ public class UrineAnimationActivity extends AppCompatActivity {
                     }
                 }
                 else{
+
                     nextImage();
                 }
 
