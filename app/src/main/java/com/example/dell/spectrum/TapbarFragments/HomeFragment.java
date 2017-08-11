@@ -282,7 +282,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
     public List<MeatData> fill_with_meat() {
         List<MeatData> dataforwater = new ArrayList<>();
 
-        dataforwater.add(new MeatData( R.drawable.ic_unnown, "Nitrate"));
+        dataforwater.add(new MeatData( R.drawable.ic_nitrite, "Nitrate"));
         dataforwater.add(new MeatData( R.drawable.ic_unnown, "Freshnesh"));
         dataforwater.add(new MeatData( R.drawable.ic_unnown, "Pigment"));
         dataforwater.add(new MeatData( R.drawable.ic_infectedmeet, "Infected meet"));

@@ -27,7 +27,8 @@
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/back" />
 
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:id="@+id/start_txt_month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,7 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="30dp">
 
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:id="@+id/glucose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,14 +125,16 @@
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             android:layout_height="wrap_content">
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
                 android:background="#40ff00"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -138,14 +142,16 @@
                 android:text="-Ve"
                 android:textSize="15dp"
                 />
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:id="@+id/yellow"
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true"
                 android:background="#ffff00"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/yellow"
@@ -153,7 +159,8 @@
                 android:text="-/+ Ve"
                 android:textSize="15dp"
                 />
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:id="@+id/cyan"
@@ -161,7 +168,8 @@
                 android:layout_marginRight="70dp"
                 android:layout_centerVertical="true"
                 android:background="#00ffff"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -174,14 +182,16 @@
             android:layout_width="match_parent"
             android:layout_marginTop="10dp"
             android:layout_height="wrap_content">
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="20dp"
                 android:layout_centerVertical="true"
                 android:background="#bf00ff"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -189,14 +199,16 @@
                 android:text="++Ve"
                 android:textSize="15dp"
                 />
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:id="@+id/ong"
                 android:layout_centerInParent="true"
                 android:layout_centerVertical="true"
                 android:background="#ffbf00"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/ong"
@@ -204,7 +216,8 @@
                 android:text="+++ Ve"
                 android:textSize="15dp"
                 />
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="10dp"
                 android:layout_height="10dp"
                 android:id="@+id/red"
@@ -212,7 +225,8 @@
                 android:layout_marginRight="70dp"
                 android:layout_centerVertical="true"
                 android:background="#ff0000"/>
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -224,14 +238,16 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="30dp">
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="match_parent"
                 android:text="2017/08/04 "
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="15dp"
                 android:layout_height="wrap_content" />
-            <TextView
+            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+
                 android:layout_width="match_parent"
                 android:text="Test Results"
                 android:layout_marginTop="5dp"

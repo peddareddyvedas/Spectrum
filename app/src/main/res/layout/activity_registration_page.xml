@@ -15,212 +15,193 @@
         <com.example.dell.spectrum.FONTS.TextViewFontStyle
             android:layout_width="150dp"
             android:layout_height="40dp"
-            android:textSize="30dp"
-            android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
             android:layout_marginTop="20dp"
             android:background="@drawable/ic_logo"
-            />
+            android:textSize="30dp" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/l1"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
+
+    <ScrollView
+        android:id="@+id/ScrollView_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/image"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="10dp"
-        android:background="#ffffff">
+        android:baselineAligned="false"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/shapes">
-
-            <Button
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/ic_user_icon" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:singleLine="true"
-                android:layout_centerVertical="true"
-                android:hint="Enter phone or email"
-                android:layout_marginLeft="50dp"
-                android:id="@+id/phoneoremai"
-                android:inputType="textEmailAddress"
-                android:background="@android:color/transparent" />
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/l2"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/image"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#ffffff">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/shapes">
-
-            <Button
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/ic_lockicon" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:hint="Enter code"
-                android:singleLine="true"
-                android:textSize="18sp"
-                android:id="@+id/verifycode"
-                android:layout_marginLeft="50dp"
-                android:background="@android:color/transparent" />
-            <RelativeLayout
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentRight="true"
-                android:background="#2196f3">
-                <com.example.dell.spectrum.FONTS.TextViewFontStyle
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="send code"
-                    android:layout_marginLeft="10dp"
-                    android:layout_centerVertical="true"
-                    android:textColor="#ffffff"
-
-                     />
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/l3"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_below="@+id/image"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="15dp"
-        android:background="#ffffff">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:background="@drawable/shapes">
-
-            <Button
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/ic_lockicon" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:hint="Enter password"
-                android:textSize="18sp"
-                android:singleLine="true"
-                android:id="@+id/password"
-                android:layout_marginLeft="50dp"
-                android:background="@android:color/transparent" />
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-    <!--<RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="40dp"
-        android:background="#ffffff">
-
-        <com.example.dell.spectrum.FONTS.EditTextFontStyle
-            android:id="@+id/id_search_EditText"
+        <LinearLayout
+            android:id="@+id/LinearLayout"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/shapes"
-            android:hint="Enter verification code"
-            android:inputType="text"
-            android:paddingLeft="5dp"
-            android:textSize="19dp" />
-
-        <com.example.dell.spectrum.FONTS.ButtonFontStyle
-            android:id="@+id/verificationbutton"
-            android:layout_width="108dp"
-            android:layout_height="40dp"
-            android:layout_alignBottom="@+id/id_search_EditText"
-            android:layout_alignRight="@+id/id_search_EditText"
-            android:layout_alignTop="@+id/id_search_EditText"
-            android:text="get verification code"
-            android:textSize="10dp" />
-
-    </RelativeLayout>-->
-
-    <com.example.dell.spectrum.FONTS.ButtonFontStyle
-        android:id="@+id/signinbutton"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_alignEnd="@+id/loginpassword"
-        android:layout_alignStart="@+id/loginpassword"
-        android:layout_below="@+id/loginpassword"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/signinbutton"
-        android:text="Create Account"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        android:textColor="@color/colorWhite"
-        />
-
-    <!--<RelativeLayout
-        android:id="@+id/forgotnew"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        >
-
-        <com.example.dell.spectrum.FONTS.TextViewFontStyle
-            android:id="@+id/usemail"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Create with email address"
-            android:textSize="17sp" />
-        <com.example.dell.spectrum.FONTS.TextViewFontStyle
-            android:id="@+id/returnlogin"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_toRightOf="@id/usemail"
-            android:text="Return to login"
-            android:textColor="#0000ff"
-            android:textSize="17sp" />
-    </RelativeLayout>
--->
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
 
+
+            <LinearLayout
+                android:id="@+id/l_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/image"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/shapes">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_user_icon" />
+
+                        <com.example.dell.spectrum.FONTS.EditTextFontStyle
+                            android:id="@+id/phoneoremai"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter phone or email"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:textColor="@color/colorGray"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/image"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/shapes">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_lockicon" />
+
+                        <com.example.dell.spectrum.FONTS.EditTextFontStyle
+                            android:id="@+id/verifycode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter code"
+                            android:singleLine="true"
+                            android:textColor="@color/colorGray"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="18sp" />
+
+                        <RelativeLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#2196f3">
+
+                            <com.example.dell.spectrum.FONTS.TextViewFontStyle
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="send code"
+                                android:textColor="#ffffff"
+
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/image"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/shapes">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ic_lockicon" />
+
+                        <com.example.dell.spectrum.FONTS.EditTextFontStyle
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Enter password"
+                            android:singleLine="true"
+                            android:textColor="@color/colorGray"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <com.example.dell.spectrum.FONTS.ButtonFontStyle
+                    android:id="@+id/signinbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignEnd="@+id/loginpassword"
+                    android:layout_alignStart="@+id/loginpassword"
+                    android:layout_below="@+id/loginpassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/signinbutton"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

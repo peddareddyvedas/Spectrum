@@ -29,12 +29,14 @@
               android:layout_marginTop="20dp"
               android:layout_marginLeft="20dp"
             />
-         <EditText
+         <com.example.dell.spectrum.FONTS.EditTextFontStyle
              android:layout_width="match_parent"
              android:layout_height="85dp"
              android:id="@+id/editone"
              android:layout_marginLeft="20dp"
              android:gravity="start"
+             android:textColor="@color/colorGray"
+             android:textCursorDrawable="@drawable/color_cursor"
              android:imeOptions="actionNext"
              android:paddingLeft="5dp"
              android:background="#D9DADC"
@@ -57,9 +59,11 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="20dp"
                 />
-            <EditText
+            <com.example.dell.spectrum.FONTS.EditTextFontStyle
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
+                android:textColor="@color/colorGray"
+                android:textCursorDrawable="@drawable/color_cursor"
                 android:layout_marginLeft="20dp"
                 android:background="#D9DADC"
                 android:singleLine="true"

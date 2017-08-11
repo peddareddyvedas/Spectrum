@@ -44,48 +44,59 @@ public class FragmentMainActivity extends AppCompatActivity {
                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
             }
         });
-        try {
-            Bundle bundle = getIntent().getExtras();
-            key = bundle.getString("key");
-
-        }catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-        if(savedInstanceState == null)
-        {
-            if(key == null)
-            {
-                // Select this one
-                Fragment fragment = new TestFragment();
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame1, fragment).commit();
 
 
-            }
-            else if(key.equals("result"))
-            {
-                Fragment fragment = new ResultFragment();
-                FragmentManager fragmentManager = getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "test").commit();
-            }
-//            else if(key.equals("record"))
+
+//        try {
+//            Bundle bundle = getIntent().getExtras();
+//            key = bundle.getString("key");
+//
+//        }catch (Exception e)
+//        {
+//            e.printStackTrace();
+//        }
+//
+//        if(savedInstanceState == null)
+//        {
+//            if(key == null)
 //            {
-//                Fragment fragment = new RecordFragment();
+//                // Select this one
+//                Fragment fragment = new TestFragment();
 //                FragmentManager fragmentManager = getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "record").commit();
-//            }
-//            else if(key.equals("result"))
-//            {
-//                Fragment fragment = new ResultFragment();
-//                FragmentManager fragmentManager = getSupportFragmentManager();
-//                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "result").commit();
+//                fragmentManager.beginTransaction().replace(R.id.frame1, fragment).commit();
+//
 //
 //            }
-
-
-        }
+//
+//            else if (key.equals("result"))
+//            {
+//                Fragment fragment = new ResultFragment();
+//                FragmentManager  fragmentManager= getSupportFragmentManager();
+//                fragmentManager.beginTransaction().replace(R.id.frame1,fragment).commit();
+//            }
+////            else if(key.equals("test"))
+////            {
+////                Fragment fragment = new ResultFragment();
+////                FragmentManager fragmentManager = getSupportFragmentManager();
+////                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "test").commit();
+////            }
+////            else if(key.equals("record"))
+////            {
+////                Fragment fragment = new RecordFragment();
+////                FragmentManager fragmentManager = getSupportFragmentManager();
+////                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "record").commit();
+//////            }
+////            else if(key.equals("result"))
+////            {
+////                Fragment fragment = new ResultFragment();
+////                FragmentManager fragmentManager = getSupportFragmentManager();
+////                fragmentManager.beginTransaction().replace(R.id.frame1, fragment, "result").commit();
+////
+////
+////            }
+//
+//
+//        }
 
 
 

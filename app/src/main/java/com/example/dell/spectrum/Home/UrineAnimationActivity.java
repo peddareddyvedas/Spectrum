@@ -94,7 +94,8 @@ public class UrineAnimationActivity extends AppCompatActivity {
 
         currentIndex++;
 
-        new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable()
+        {
 
             @Override
             public void run() {

@@ -34,7 +34,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
     int count = 0;
     Toolbar toolbar;
     ImageButton back;
-    public static boolean isFromcir=false;
+    public static boolean isFromtest=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -71,6 +71,19 @@ public class TestAnalizingActivity extends AppCompatActivity {
             no.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
+
+                    isFromtest=true;
+                    Log.e("onclick","call"+isFromtest);
+                    if(isFromtest){
+                        Log.e("ttrue","call");
+                        finish();
+                        FragmentMainActivity.isFromHOme=false;
+                        startActivity(new Intent(getApplicationContext(),FragmentMainActivity.class));
+                    }
+
+
+
                     dialog.dismiss();
                 }
             });
@@ -79,9 +92,9 @@ public class TestAnalizingActivity extends AppCompatActivity {
                 public void onClick(View v) {
 
 
-                    isFromcir=true;
-                    Log.e("onclick","call"+isFromcir);
-                    if(isFromcir){
+                    isFromtest=true;
+                    Log.e("onclick","call"+isFromtest);
+                    if(isFromtest){
                         Log.e("skiptrue","call");
                         startActivity(new Intent(getApplicationContext(),HomeActivity.class));
                     }
@@ -89,6 +102,7 @@ public class TestAnalizingActivity extends AppCompatActivity {
                     dialog.dismiss();
                 }
             });
+            Log.e("booela","call"+isFromtest);
             nextImage();
         }
 
@@ -116,11 +130,9 @@ public class TestAnalizingActivity extends AppCompatActivity {
         }catch (ArrayIndexOutOfBoundsException e){
             e.printStackTrace();
         }
-        Animation rotateimage = AnimationUtils.loadAnimation(this, R.anim.animation);
+        final Animation rotateimage = AnimationUtils.loadAnimation(this, R.anim.animation);
         iv.startAnimation(rotateimage);
         currentIndex++;
-
-        //Toast.makeText(getApplicationContext(),"value"+currentIndex,Toast.LENGTH_SHORT).show();
 
 
         new Handler().postDelayed(new Runnable() {
@@ -130,16 +142,19 @@ public class TestAnalizingActivity extends AppCompatActivity {
                 if(currentIndex > endIndex)
                 {
                     currentIndex = 0;
-                    currentIndex = 0;
-                    if(isFromcir==false)
-                    {
 
-                        Intent intent = new Intent(getApplicationContext(), FragmentMainActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putString("key", "result");
-                        Log.e("key",""+bundle);
-                        intent.putExtras(bundle);
+                    if(isFromtest==false)
+                   {
+                         finish();
+                       FragmentMainActivity.isFromHOme=false;
+                       Intent intent = new Intent(getApplicationContext(), FragmentMainActivity.class);
+
                         startActivity(intent);
+
+//                       Bundle bundle = new Bundle();
+//                       bundle.putString("key", "result");
+//                       Log.e("key",""+bundle);
+//                       intent.putExtras(bundle);
 
 
                     }

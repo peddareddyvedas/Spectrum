@@ -42,6 +42,8 @@
                     android:layout_marginRight="20dp"
                     android:background="#D9DADC"
                     android:hint="@string/dad"
+                    android:textColor="@color/colorGray"
+                    android:textCursorDrawable="@drawable/color_cursor"
                     android:maxLength="15"
                     android:singleLine="true"
                     android:textAlignment="center" />
@@ -110,6 +112,8 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:background="#D9DADC"
+                    android:textColor="@color/colorGray"
+                    android:textCursorDrawable="@drawable/color_cursor"
                     android:hint="E-mail/ phone number"
                     android:maxLength="15"
                     android:singleLine="true"
